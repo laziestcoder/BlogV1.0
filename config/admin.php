@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name' => 'BlogV1 Admin Panel',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>BlogV1</b> admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>BV1</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -395,6 +395,10 @@ return [
     |
     */
     'extensions' => [
+        'media-manager' => [
 
+            // Select a local disk that you configured in `config/filesystem.php`
+            'disk' => 'admin'
+        ],
     ],
 ];

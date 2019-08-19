@@ -1,6 +1,6 @@
 {{-- 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="/">{{config('app.name','LScratch')}}</a>
+  <a class="navbar-brand" href="/">{{config('app.name','BlogV1')}}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -71,7 +71,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'LScratch') }}
+                {{ config('app.name', 'BlogV1') }}
             </a>
         </div>
 
@@ -86,7 +86,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/services">Services</a></li>
-                <li><a href="/posts">Blog</a></li>
+                <li><a href="/posts">Posts</a></li>
               </ul>
 
 
@@ -104,7 +104,8 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                          
+                        <li><a href="/admin">Admin</a></li>   
+                          <li>
                           <li><a href="/dashboard">Dashboard</a></li>   
                           <li>
                                 <a href="{{ route('logout') }}"
