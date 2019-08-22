@@ -1,10 +1,11 @@
 <?php
 
+
 namespace Encore\Admin\Auth\Database;
 
 use Illuminate\Database\Seeder;
 
-class AdminTablesSeeder extends Seeder
+class AdminTablesSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -31,7 +32,7 @@ class AdminTablesSeeder extends Seeder
                 'password' => bcrypt('i am supervisor'),
                 'name' => 'Supervisor',
             ],
-    );
+        );
 
         // create a role.
         Role::truncate();
